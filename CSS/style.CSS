@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  position: fixed;
+  position: relative;
   width: 100%;
   background-color: black;
   color: white;
@@ -40,4 +40,8 @@ header nav a:hover {
   background-color: red;
   color: wheat;
   font-weight: bold;
+}
+
+section article {
+  height: 100vh;
 }
