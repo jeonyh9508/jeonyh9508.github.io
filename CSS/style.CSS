@@ -9,39 +9,69 @@ body {
 }
 
 header {
-  position: relative;
-  width: 100%;
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: space-between;
+  height: 100vh;
 }
 
-header h1 {
-  padding: 20px;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-header nav {
-  display: flex;
-}
-
-header nav a {
-  width: 100px;
+body nav {
+  list-style: none;
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content: center;
-  padding: 20px;
+  justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+  padding: 0;
+  right: 0;
+  top: 25%;
+  background-color: black;
+  width: 150px;
+  min-height: 350px;
 }
 
-header nav a:hover {
-  background-color: red;
-  color: wheat;
+nav p {
+  color: white;
+  margin-top: 30px;
+}
+nav a {
+  color: inherit;
+  text-decoration: none;
+  width: 150px;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav > ul ul {
+  display: none;
+}
+
+nav ul > li > a {
+  display: block;
+  color: white;
+  font-size: 1rem;
   font-weight: bold;
 }
 
-section article {
+nav > ul > li:hover > ul {
+  display: block;
+  position: absolute;
+  background-color: grey;
+  top: 69.4%;
+  right: 100%;
+  width: 100%;
+}
+
+section {
   height: 100vh;
+}
+
+#info {
+  background: white;
+}
+
+#contact {
+  background: white;
+  height: 100px;
 }
